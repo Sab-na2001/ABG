@@ -89,3 +89,5 @@ public class CheckerBoard extends MyBoard {
     return fen;
   }
 }
+
+

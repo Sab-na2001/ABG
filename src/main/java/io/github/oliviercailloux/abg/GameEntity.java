@@ -80,11 +80,12 @@ public class GameEntity {
 
   public static GameEntity cerateNewGameWithChecker() {
     GameEntity game = new GameEntity();
-    CheckerBoard startBoard = CheckerBoard.initialBoard();
-    game.setMyBoard(startBoard);
+    CheckersBoard2 C1 = null;
+    CheckersBoard2.launchgame(C1);
+    game.setMyBoard(C1);
     return game;
   }
-
+   
   public GameEntity(GameState gameState) {
     this();
     this.startBoard = gameState.getChessBoard();
